@@ -11,14 +11,17 @@
   .container {
     height: 100vh;
     /* padding-left: 1rem; */
+
   }
   
   header {
-    height: 6rem;
+    height: 8rem;
     display: flex;
     align-items: center;
+    justify-content: center;
     padding-left: 1rem;
   }
+
   
   header.light-theme {
     background-color: #E0F2FE;
@@ -38,6 +41,10 @@
   main {
     padding-left: 1rem;
     padding-top: 2rem;
+    display: flex;
+    justify-content: center;
+ 
+
   }
   
   .container.dark-theme {

@@ -1,11 +1,16 @@
 import React from "react"
+import ThemeContext from "../themeContext"
 
 
 function Button(){
+    const context = React.useContext(ThemeContext)
+
     return(
-        <button className="dark-theme">
-            Switch Theme
-        </button>
+        <main>
+            <button className={`${context}-theme`}>
+                Switch Theme
+            </button>
+        </main>
     )
 }
 
