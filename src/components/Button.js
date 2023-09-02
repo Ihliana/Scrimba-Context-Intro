@@ -3,11 +3,11 @@ import ThemeContext from "../themeContext"
 
 
 function Button(){
-    const context = React.useContext(ThemeContext)
+    const {theme, toggleTheme} = React.useContext(ThemeContext)
 
     return(
         <main>
-            <button className={`${context}-theme`}>
+            <button onClick={toggleTheme} className={`${theme}-theme`}>
                 Switch Theme
             </button>
         </main>
